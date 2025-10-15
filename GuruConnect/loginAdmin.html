@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuruConnect</title>
+    <link rel="stylesheet" href="styleLoginAdmin.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Selamat Datang Kembali, Admin</h1>
+        <form class="loginForm" method="POST" action="loginAdmin.php">
+            <input type="text" id="idAdmin" class="idAdmin" name="idAdmin" placeholder="ID Admin" required><br>
+            <div class="password-container">
+                <input type="password" id="pwAdmin" class="pwAdmin" name="pwAdmin" placeholder="Password Admin" required>
+                <button type="button" id="togglePassword" class="togglePassword">Show</button>
+            </div>
+            <div class="button">
+                <button class="Masuk" type="submit">Masuk</button>
+                <button class="Batal" type="button" onclick="window.location.href='frontPage.html'">Keluar</button>
+            </div>
+        </form>
+    </div>
+    <script>
+    const passwordInput = document.getElementById('pwAdmin');
+    const togglePassword = document.getElementById('togglePassword');
+
+    togglePassword.addEventListener('click', function() {
+    const type = passwordInput.type === 'password' ? 'text' : 'password';
+        passwordInput.type = type;
+        this.textContent = type === 'password' ? 'Show' : 'Hide';
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleFront.css">
+    <title>GuruConnect</title>
+</head>
+<body>
+    <div class="border" id="welcomeBorder">
+    <img src="ImgAsset/GuruConnect.png" alt="Icon" class="Icon">
+        <div class="button">
+            <button class="Guru">
+                <a href="loginGuru.html">Masuk Sebagai Guru</a>
+            </button>
+            <br>
+            <button class="Admin">
+                <a href="loginAdmin.html">Masuk Sebagai Admin</a>
+            </button>
+        </div>
+    </div>
+    <script>
+    window.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        document.getElementById('welcomeBorder').classList.add('visible');
+            }, 100);
+    });
+    </script>
+</body>
+</html>

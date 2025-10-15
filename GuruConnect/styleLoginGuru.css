@@ -1,0 +1,118 @@
+body {
+    background-color: #600B8A;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    padding: 2em;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.login {
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.NIP {
+    margin-top: 10px;
+    border: 2px solid #38005a;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+    width: 90%;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+
+.namaGuru {
+    margin-top: 10px;
+    border: 2px solid #38005a;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+    width: 90%;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+
+.password {
+    margin-top: 10px;
+    border: 2px solid #38005a;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+    width: 90%;
+    max-width: 320px;
+    margin: 10px auto 0 auto;
+}
+
+.togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #38005a;
+    cursor: pointer;
+    font-size: 0.8em;
+    padding: 2px 6px;
+    line-height: 1;
+}
+
+.button {
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.button .Masuk {
+    transition: transform 0.2s ease;
+    margin-top: 0;
+    border: 2px solid #38005a;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.button .Batal {
+    transition: transform 0.2s ease;
+    border: 2px solid #38005a;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}

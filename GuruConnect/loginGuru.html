@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuruConnect</title>
+    <link rel="stylesheet" href="styleLoginGuru.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Selamat Datang Kembali, Bapak/Ibu guru</h1>
+        <form class="loginForm" method="POST" action="loginGuru.php">
+            <input type="text" id="NIP" class="NIP" name="NIP" placeholder="NIP"> <br>
+            <input type="text" id="namaGuru" class="namaGuru" name="namaGuru" placeholder="Nama Guru"> <br>
+            <div class="password-container">
+                <input type="password" id="password" class="password" name="password" placeholder="Password">
+                <button type="button" id="togglePassword" class="togglePassword">Show</button>
+            </div>
+            <div class="button">
+                <button class="Masuk" type="submit">Masuk</button>
+                <button class="Batal" type="button" onclick="window.location.href='frontPage.html'">Keluar</button>
+            </div>
+        </form>
+    </div>
+    <script>
+    const passwordInput = document.getElementById('password');
+    const togglePassword = document.getElementById('togglePassword');
+
+    togglePassword.addEventListener('click', function() {
+    const type = passwordInput.type === 'password' ? 'text' : 'password';
+        passwordInput.type = type;
+        this.textContent = type === 'password' ? 'Show' : 'Hide';
+    });
+    </script>
+</body>
+</html>
